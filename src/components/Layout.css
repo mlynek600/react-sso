@@ -1,0 +1,10 @@
+.main-layout {
+  background-image: url('../../public/background.jpg');
+  width: 100vw;
+  height: 100vh;
+  color: rgb(225, 237, 187);
+}
+
+.content {
+  padding: 30px;
+}

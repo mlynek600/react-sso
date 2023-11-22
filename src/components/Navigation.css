@@ -1,0 +1,14 @@
+.navigation {
+  display: flex;
+}
+
+.sign-in {
+  padding: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  width: 15%;
+  justify-content: end;
+}
