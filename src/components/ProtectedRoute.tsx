@@ -11,7 +11,7 @@ const ProtectedRoute = ({ children }: PropsWithChildren) => {
   }
   
   if (!session?.user) {
-    return <Navigate to='/' />
+    return <>You need to be logged in to view your profile!</>
   }
 
   return <>{children}</>
