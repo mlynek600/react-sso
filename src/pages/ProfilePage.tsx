@@ -5,9 +5,21 @@ const ProfilePage = () => {
 
   return (
     <div>
-      <h1>Name: {user?.fullName}</h1>
-      <h1>E-mail: {user?.emailAddresses[0].emailAddress}</h1>
-      <h1>Last signed in: {user?.lastSignInAt?.toDateString()}</h1>
+      <div>
+        Name: <b>{user?.fullName}</b>
+      </div>
+
+      <div>
+        E-mail: <b>{user?.emailAddresses[0].emailAddress}</b>
+      </div>
+
+      <div>
+        Joined: <b>{user?.createdAt?.toDateString()}</b>
+      </div>
+
+      <div>
+        Last signed in: <b>{user?.lastSignInAt?.toDateString()}</b>
+      </div>
     </div>
   );
 };

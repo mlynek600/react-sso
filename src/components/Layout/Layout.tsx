@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import Navigation from './Navigation';
+import Navigation from '../Navigation/Navigation';
 import './Layout.css';
 
 const Layout = ({ children }: PropsWithChildren) => {

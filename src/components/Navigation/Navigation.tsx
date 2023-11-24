@@ -1,10 +1,5 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
-import {
-  useSession,
-  useClerk,
-  UserButton,
-  SignInButton,
-} from '@clerk/clerk-react';
+import { useSession, UserButton, SignInButton } from '@clerk/clerk-react';
 import { NavLink } from 'react-router-dom';
 import './Navigation.css';
 
@@ -41,7 +36,7 @@ const Navigation = () => {
       </Breadcrumb>
 
       <div className='sign-in'>
-        {session ? <UserButton /> : <SignInButton />}
+        {session ? <UserButton afterSignOutUrl='/' /> : <SignInButton />}
       </div>
     </div>
   );
